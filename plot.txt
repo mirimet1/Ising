@@ -1,0 +1,6 @@
+set ylabel "Magnetization"
+set yrange [-1:1]
+set xlabel "MonteCarlo Step"
+set autoscale
+plot("magnetization.txt") with lp 
+pause -1
