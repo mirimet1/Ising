@@ -20,7 +20,7 @@
    
 which is implemented in the Numerical recipes in C, chapter 7 (ran2)
 
-``Long period (> 2 × 10^{18}) random number generator of L. Ecuyer with Bays-Durham shuffle
+``Long period (> 2 Ã— 10^{18}) random number generator of L. Ecuyer with Bays-Durham shuffle
 and added safeguards. Returns a uniform random deviate between 0.0 and 1.0 (exclusive of
 the endpoint values). 
 
@@ -48,7 +48,7 @@ using namespace std;
    
 which is implemented in the Numerical recipes in C, chapter 7 (ran2)
 
-``Long period (> 2 × 10^{18}) random number generator of L. Ecuyer with Bays-Durham shuffle
+``Long period (> 2 Ã— 10^{18}) random number generator of L. Ecuyer with Bays-Durham shuffle
 and added safeguards. Returns a uniform random deviate between 0.0 and 1.0 (exclusive of
 the endpoint values). 
 
@@ -146,7 +146,7 @@ inline int Random(int N) { return int(ran2(&iseed)*N); }
 //------------------------------------------------------------------------------
 //END_FOLD   - Random number generator section
 
-const int L =8;                // Lattice size; L = 2^n
+const int L = 256;                // Lattice size; L = 2^n
 int** s;                          // Spins lattice; s[i][j] shows the spin of cell at (i,j)
 
 // All the following parameters are in the reduced unit system
